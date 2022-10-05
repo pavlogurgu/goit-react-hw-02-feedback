@@ -1,4 +1,4 @@
-import { ButtonList, Button, ButtonLi, AppPart } from './RateButtons.styled';
+import { ButtonList, Button, ButtonLi } from './RateButtons.styled';
 import { PropTypes } from 'prop-types';
 
 export const RateButtons = ({ options, onFeedback }) => {
