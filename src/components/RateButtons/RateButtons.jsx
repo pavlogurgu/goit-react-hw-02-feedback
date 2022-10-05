@@ -19,5 +19,5 @@ export const RateButtons = ({ options, onFeedback }) => {
 
 RateButtons.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string.isRequired),
-  onLeaveFeedback: PropTypes.func.isRequired,
+  onFeedback: PropTypes.func.isRequired,
 };

@@ -1,4 +1,3 @@
-
 import { Component } from 'react';
 import { Statistics } from './Statistics/Statistics';
 import { RateButtons } from './RateButtons/RateButtons';
