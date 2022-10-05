@@ -1,4 +1,4 @@
-import { ButtonList, Button } from './RateButtons.styled';
+import { ButtonList, Button, ButtonLi, AppPart } from './RateButtons.styled';
 import { PropTypes } from 'prop-types';
 
 export const RateButtons = ({ options, onFeedback }) => {
@@ -6,11 +6,11 @@ export const RateButtons = ({ options, onFeedback }) => {
     <ButtonList>
       {options.map((option, index) => {
         return (
-          <li key={index}>
+          <ButtonLi key={index}>
             <Button type="button" onClick={() => onFeedback(option)}>
               {option}
             </Button>
-          </li>
+          </ButtonLi>
         );
       })}
     </ButtonList>

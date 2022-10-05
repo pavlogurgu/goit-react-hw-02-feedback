@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { Statistics } from './Statistics/Statistics';
 import { RateButtons } from './RateButtons/RateButtons';
+import { AppPart } from './RateButtons/RateButtons.styled';
 import { Notification } from './Notification/Notification';
 
 export class App extends Component {
@@ -39,7 +40,7 @@ export class App extends Component {
     const PositiveFeedbackPercentage = this.countPositiveVotes();
 
     return (
-      <div>
+      <AppPart>
         <h1>Please leave the feedback</h1>
         <RateButtons
           options={options}
@@ -56,7 +57,7 @@ export class App extends Component {
         ) : (
           <Notification message="There is no feedback" />
         )}
-      </div>
+      </AppPart>
     );
   }
 }
